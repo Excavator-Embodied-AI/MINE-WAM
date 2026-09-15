@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="MINE-WAM combines RGB observations with LiDAR-derived elevation for real-world, full-cycle autonomous excavator loading.">
+  <meta name="theme-color" content="#7a5bb6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MINE-WAM — LiDAR–RGB World–Action Modeling for Autonomous Loading">
+  <meta property="og:description" content="A multimodal World–Action Model for full-cycle autonomous loading on a real 49-ton excavator.">
+  <meta property="og:image" content="assets/images/dataset-overview-poster.webp">
+  <title>MINE-WAM | LiDAR–RGB World–Action Model</title>
+
+  <link rel="icon" href="assets/images/excavator-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": "MINE-WAM: A LiDAR–RGB Multimodal World–Action Model with INjected Elevation for Real-World Autonomous Loading",
+    "description": "A LiDAR–RGB multimodal World–Action Model for full-cycle hydraulic control on a real full-size excavator."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="page-shell">
+    <div class="brand-row" aria-hidden="true">
+      <img src="assets/images/excavator-mark.svg" alt="" class="brand-mark">
+      <span>MINE-WAM</span>
+    </div>
+
+    <header class="paper-header">
+      <p class="eyebrow">Real-world autonomous loading</p>
+      <h1>
+        <span class="wordmark"><span class="mine">MINE</span>-WAM</span>
+        <span class="paper-title">A LiDAR–RGB Multimodal World–Action Model with INjected Elevation for Real-World Autonomous Loading</span>
+      </h1>
+
+      <div class="resource-buttons" aria-label="Project resources">
+        <button class="resource-button paper-button" type="button" data-resource="Paper" data-message="The paper will be available here after its public release.">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+          <span>Paper</span><span class="button-status">Coming soon</span>
+        </button>
+        <button class="resource-button code-button" type="button" data-resource="Code" data-message="The training and deployment code is being prepared for public release.">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+          <span>Code</span><span class="button-status">Coming soon</span>
+        </button>
+        <button class="resource-button dataset-button" type="button" data-resource="Dataset" data-message="The dataset is planned for release upon acceptance.">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+          <span>Dataset</span><span class="button-status">Coming soon</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="content-card dataset-overview-card" id="dataset-overview" aria-labelledby="dataset-overview-title">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Large-scale field data</p>
+          <h2 id="dataset-overview-title">Dataset Overview</h2>
+        </div>
+        <p class="section-intro">A glimpse across diverse excavator viewpoints, machines, illumination, and real-world worksite conditions.</p>
+        <p class="dataset-release-note">
+          <span aria-hidden="true">◆</span>
+          <strong>The dataset will be released upon acceptance.</strong>
+        </p>
+        <div class="dataset-overview-frame">
+          <video class="dataset-overview-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/dataset-overview-poster.webp" data-autoplay-video aria-label="Animated mosaic of the MINE-WAM excavator-operation dataset">
+            <source src="assets/videos/dataset-overview.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <p class="media-caption">A visual mosaic sampled from large-scale excavator-operation footage used by the three-tier training recipe.</p>
+      </section>
+
+      <section class="content-card teaser-card" aria-labelledby="teaser-title">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">One policy. One complete cycle.</p>
+          <h2 id="teaser-title">Full-cycle loading on a real excavator</h2>
+        </div>
+        <div class="hero-video-frame paired-video-frame full-cycle-paired-video">
+          <video class="hero-video" autoplay muted loop controls playsinline preload="auto" poster="assets/images/rgb-elevation-poster.webp" data-autoplay-video aria-label="Side-by-side synchronized RGB and LiDAR-derived elevation views of a complete excavator loading cycle">
+            <source src="assets/videos/rgb-elevation.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <span class="paired-label rgb-label">RGB</span>
+          <span class="paired-label elevation-label">LiDAR-derived elevation</span>
+        </div>
+        <p class="media-caption">Synchronized local appearance and global geometry throughout one complete loading cycle.</p>
+      </section>
+
+      <section class="content-card" id="abstract" aria-labelledby="abstract-title">
+        <div class="section-heading">
+          <p class="section-kicker">At a glance</p>
+          <h2 id="abstract-title">Abstract</h2>
+        </div>
+        <div class="abstract-copy">
+          <p>Full-cycle loading with a full-size excavator remains difficult because deformable soil, changing pile geometry, and camera motion demand continuous adaptation in unstructured outdoor worksites. Existing World–Action Models were developed mainly for tabletop robots and rely primarily on RGB observations, which are vulnerable to occlusion, dust, glare, darkness, and limited field of view.</p>
+          <p>We develop <strong>MINE-WAM</strong>, a LiDAR–RGB Multimodal World–Action Model that combines local RGB observations with global geometry from LiDAR-derived elevation to learn full-cycle hydraulic control. Elevation is used as conditioning rather than as a video prediction target. A ResNet18 converts the elevation map into spatial tokens injected throughout the video and action experts, while mutually exclusive condition masking discourages either visual modality from dominating.</p>
+          <p>Training follows a data pyramid of 2,000 hours of operator-view video, 200 hours of RGB–action data, and 20 hours of target-machine RGB–LiDAR–action data. On a real full-size excavator, MINE-WAM achieves a <strong>4% empty-bucket rate</strong> and an <strong>18 s average time per bucket</strong>. Its embedded implementation produces an action chunk in <strong>220 ms</strong>, an <strong>8.5× compute speedup</strong> over the unoptimized implementation.</p>
+        </div>
+
+        <nav class="quick-nav" aria-label="On-page navigation">
+          <a href="#overview">Overview</a>
+          <a href="#method">Method</a>
+          <a href="#training">Training</a>
+          <a href="#results">Results</a>
+          <a href="#demos">Presentation</a>
+          <a href="#citation">Citation</a>
+        </nav>
+      </section>
+
+      <section class="content-card" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <p class="section-kicker">Architecture</p>
+          <h2 id="method-title">Geometry-conditioned world–action modeling</h2>
+        </div>
+        <p class="section-intro">MINE-WAM treats the elevation map as structural context rather than an image to be generated. Spatial elevation tokens condition every cross-attention layer of both experts, while RGB and proprioception remain time-varying observations.</p>
+        <figure class="wide-figure">
+          <img src="assets/images/architecture.webp" alt="MINE-WAM architecture with elevation, text, state, and RGB inputs routed into video and action DiT experts" loading="lazy">
+          <figcaption>MINE-WAM architecture and three-phase training procedure. The future-RGB branch is used only during training.</figcaption>
+        </figure>
+
+        <div class="stream-grid">
+          <article><span>Stream 1</span><h3>Shared global context</h3><p>Task text and 49 spatial elevation tokens condition both experts.</p></article>
+          <article><span>Stream 2</span><h3>Chunk-local observations</h3><p>RGB and machine state provide causal, time-varying evidence to the action expert.</p></article>
+          <article><span>Stream 3</span><h3>Cross-expert context</h3><p>First-frame keys and values connect video understanding with action generation.</p></article>
+        </div>
+      </section>
+
+      <section class="content-card" id="overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="section-kicker">Why multimodal?</p>
+          <h2 id="overview-title">Local appearance meets global geometry</h2>
+        </div>
+
+        <div class="condition-grid">
+          <figure class="condition-card">
+            <img src="assets/images/daylight.webp" alt="Excavator camera view affected by strong daylight glare" loading="lazy">
+            <figcaption><strong>Local RGB</strong><span>Captures bucket–soil interaction and material flow, but changes with glare, dust, motion, and darkness.</span></figcaption>
+          </figure>
+          <figure class="condition-card">
+            <img src="assets/images/night.webp" alt="Excavator camera view during night operation" loading="lazy">
+            <figcaption><strong>Challenging illumination</strong><span>Outdoor operation demands reliable control when visual appearance becomes ambiguous.</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="feature-grid" aria-label="Main contributions">
+          <article class="feature-card">
+            <div class="feature-icon lidar-icon" aria-hidden="true">01</div>
+            <h3>LiDAR–RGB WAM</h3>
+            <p>To our knowledge, the first LiDAR–RGB multimodal World–Action Model for excavators.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon stream-icon" aria-hidden="true">02</div>
+            <h3>Three-stream conditioning</h3>
+            <p>Separates global elevation context, chunk-local observations, and cross-expert visual context.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon robot-icon" aria-hidden="true">03</div>
+            <h3>Real-machine validation</h3>
+            <p>Closes the complete dig-to-dump loop on a 49-ton XCMG XE490DK excavator.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-card" id="training" aria-labelledby="training-title">
+        <div class="section-heading">
+          <p class="section-kicker">Data-efficient adaptation</p>
+          <h2 id="training-title">A three-tier data pyramid</h2>
+        </div>
+        <figure class="wide-figure">
+          <img src="assets/images/data-pyramid.webp" alt="Data pyramid progressing from egocentric video to RGB-action data and RGB-LiDAR-action data" loading="lazy">
+          <figcaption>Increasingly rich supervision lets the model reserve scarce paired target-machine data for multimodal alignment.</figcaption>
+        </figure>
+        <div class="training-stats">
+          <div><strong>2,000 h</strong><span>Operator-view RGB video</span><small>Visual pre-training</small></div>
+          <div><strong>200 h</strong><span>Multi-machine RGB + action</span><small>Visuomotor mid-training</small></div>
+          <div><strong>20 h</strong><span>Target RGB + LiDAR + action</span><small>Geometry-conditioned post-training</small></div>
+        </div>
+      </section>
+
+      <section class="content-card" id="results" aria-labelledby="results-title">
+        <div class="section-heading">
+          <p class="section-kicker">Real-machine evaluation</p>
+          <h2 id="results-title">Reliable and real-time loading</h2>
+        </div>
+
+        <div class="metric-grid" aria-label="Headline results">
+          <article><strong>4<span>%</span></strong><p>Empty-bucket rate</p><small>100 cycles per method</small></article>
+          <article><strong>18<span>s</span></strong><p>Average time per bucket</p><small>32 s for rule-based control</small></article>
+          <article><strong>220<span>ms</span></strong><p>Compute per action chunk</p><small>Jetson AGX Orin, H = 16</small></article>
+          <article><strong>8.5<span>×</span></strong><p>Compute speedup</p><small>Versus unoptimized execution</small></article>
+        </div>
+
+        <div class="results-layout">
+          <div class="table-wrap">
+            <table>
+              <caption>Real-robot comparison over the complete loading cycle</caption>
+              <thead><tr><th scope="col">Method</th><th scope="col">Empty bucket</th><th scope="col">Time / bucket</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Rule-based</th><td>15%</td><td>32 s</td></tr>
+                <tr><th scope="row">Diffusion Policy</th><td>23%</td><td>22 s</td></tr>
+                <tr><th scope="row">RGB-only WAM</th><td>46%</td><td>21 s</td></tr>
+                <tr><th scope="row">Frame-fusion WAM</th><td>14%</td><td>18 s</td></tr>
+                <tr><th scope="row">MINE-WAM w/o mask</th><td>15%</td><td>20 s</td></tr>
+                <tr class="best-row"><th scope="row">MINE-WAM</th><td>4%</td><td>18 s</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figure class="comparison-figure">
+            <img src="assets/images/qualitative.webp" alt="Qualitative comparison of RGB-only WAM, frame-fusion WAM, and MINE-WAM" loading="lazy">
+            <figcaption>MINE-WAM maintains truck alignment through digging, slewing, and dumping.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-card" id="demos" aria-labelledby="demos-title">
+        <div class="section-heading">
+          <p class="section-kicker">Presentation</p>
+          <h2 id="demos-title">MINE-WAM Technical Overview</h2>
+        </div>
+        <div class="video-gallery presentation-gallery">
+          <article class="video-card wide-video-card">
+            <video controls playsinline preload="metadata" poster="assets/images/presentation-poster.webp" aria-label="MINE-WAM narrated project presentation">
+              <source src="assets/videos/presentation.mp4" type="video/mp4">
+            </video>
+            <div class="video-copy"><h3>From task to deployment</h3><p>A concise presentation of the autonomous loading task, MINE-WAM architecture, three-phase training recipe, multimodal observations, and onboard deployment.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-card citation-card" id="citation" aria-labelledby="citation-title">
+        <div class="section-heading">
+          <p class="section-kicker">Reference</p>
+          <h2 id="citation-title">Citation</h2>
+        </div>
+        <div class="coming-soon-panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h5v5H7zM12 12c0 3-1.5 5-4.5 6M14 7h5v5h-5zM19 12c0 3-1.5 5-4.5 6"/></svg>
+          <div><h3>BibTeX coming soon</h3><p>The final citation will be added when the paper is publicly released.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/images/excavator-mark.svg" alt="" aria-hidden="true">
+      <p><strong>MINE-WAM</strong></p>
+      <p class="copyright">© 2026 MINE-WAM project</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" data-modal-backdrop hidden></div>
+  <section class="resource-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-message" hidden>
+    <div class="modal-icon" aria-hidden="true">↗</div>
+    <h2 id="modal-title">Coming soon</h2>
+    <p id="modal-message">This resource will be available shortly.</p>
+    <button type="button" class="modal-close">Got it</button>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

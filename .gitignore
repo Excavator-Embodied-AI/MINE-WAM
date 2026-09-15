@@ -1,0 +1,18 @@
+# Local research materials. The website uses optimized copies under /assets.
+/image/
+/模型架构图/
+/视频资料/
+/展示PPT/
+/assets/images/dataset_overview.gif
+/*.zip
+
+# Local agent/editor state.
+/.agents/
+/.codex/
+.DS_Store
+Thumbs.db
+
+# Temporary conversion output.
+*.tmp
+*.dtmp
+*.bkp
